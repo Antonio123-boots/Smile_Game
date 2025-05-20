@@ -141,7 +141,10 @@ function clicarCarta(carta, indice) {
             }
         }, 1500);
     } else {
-        // Errou - mostra o botão para jogar novamente
+        // Errou - mostra a imagem triste
+        const verso = carta.querySelector('.carta-verso');
+        verso.innerHTML = '<img src="https://thumbs.dreamstime.com/b/cara-triste-amarela-de-emoji-com-%C3%ADcone-de-grito-do-rasgo-95366354.jpg" alt="Triste">';
+        
         carta.classList.add('errou');
         jogoAtivo = false;
         
@@ -153,6 +156,7 @@ function clicarCarta(carta, indice) {
         btnJogarNovamente.style.display = 'inline-block';
     }
 }
+
 
 /**
  * Atualiza o placar na tela

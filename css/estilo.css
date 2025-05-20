@@ -147,8 +147,15 @@ body {
     animation: blink 0.5s 3;
 }
 
-.carta.errou .carta-frente {
+.carta.errou .carta-verso {
     background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+}
+
+.carta.errou .carta-verso img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 /* Botões */
